@@ -24,12 +24,12 @@ cloudinary.config({
   api_secret: CLOUDINARY_API_SECRET,
 });
 
-app.use(userRoutes);
-app.use(offerRoutes);
-
 app.get('/', (req, res) => {
   res.status(200).json({message: 'Bienvenue sur mon serveur Vinted'});
 });
+
+app.use(userRoutes);
+app.use(offerRoutes);
 
 app.all(/.*/, (req, res) => {
   res.status(404).json({message: 'This route does not exist.'});
