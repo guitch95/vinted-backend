@@ -26,7 +26,7 @@ cloudinary.config({
 });
 
 app.get('/', (req, res) => {
-  res.status(200).json({message: 'Bienvenue sur mon serveur Vinted'});
+  res.status(200).json({message: 'Bienvenue sur mon serveur Vinted les amis'});
 });
 
 app.use(userRoutes);
