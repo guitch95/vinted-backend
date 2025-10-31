@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import userRoutes from './routes/user.js';
 import offerRoutes from './routes/offer.js';
 import {v2 as cloudinary} from 'cloudinary';
+import cors from 'cors';
 import 'dotenv/config';
 
 const PORT = process.env.PORT;
